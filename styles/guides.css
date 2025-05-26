@@ -1,0 +1,39 @@
+
+.img-guides {
+  width: 200px;
+  height: auto;
+}
+
+.cont-card {
+  width: 1200px;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  width: 1200px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .questions {
+    max-width: clamp(720px, 90vw, 1200px);
+    padding: 0 clamp(24px, 6vw, 32px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .questions {
+    max-width: min(1400px, 95vw);
+    padding: 0 40px;
+  }
+}

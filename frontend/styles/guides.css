@@ -28,7 +28,6 @@ body {
   background-position: center;
   display: flex;
   flex-wrap: wrap;
-  align-items:center;
   justify-content: flex-start;
   text-align: center;
   margin-top: 24px;

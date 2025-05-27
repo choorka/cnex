@@ -31,21 +31,36 @@ body {
   justify-content: flex-start;
   text-align: center;
   margin-top: 24px;
+  gap: 3rem;
 }
 
 .card {
   text-align: center;
-  width: 300px;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
 }
 
 h2 {
   color: white;
 }
 
+.card h3 {
+  text-align: left;
+  color: white;
+}
+
 .img-guides {
   max-width: 100%;
-  width: 200px;
+  width: 250px;
   height: auto;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.img-guides:hover {
+  transform: translateY(-5px);
 }
 
 /* @media (max-width: 786px) {

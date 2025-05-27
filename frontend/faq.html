@@ -6,9 +6,9 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet"
-        href="styles/styles.css">
+        href="/frontend/styles/styles.css">
   <link rel="stylesheet"
-        href="styles/faq.css">
+        href="/frontend/styles/faq.css">
   <title>FAQ | CNEX</title>
 </head>
 
@@ -16,22 +16,57 @@
   <header class="header">
     <div class="container">
       <div class="logo">
-        <a href="index.html"
+        <a href="/frontend/index.html"
            class="logo-link">CNEX</a>
       </div>
       <nav>
         <a href="https://t.me/+-tkxgvzLYT42Yzgy"
            target="_blank">Обмен</a>
-        <a href="guides.html">Гайды</a>
-        <a href="faq.html">FAQ</a>
+        <a href="/frontend/guides/guides.html">Гайды</a>
+        <a href="/frontend/faq.html">FAQ</a>
       </nav>
     </div>
   </header>
 
   <main class="container-faq">
-    <div class="questions">
-      <h1>Частые вопросы</h1>
+    <h1>Частые вопросы</h1>
+    <div class="faq-accordion">
+      <input type="checkbox"
+             name="accordion"
+             id="item1"
+             class="accordion-input">
+      <label for="item1"
+             class="accordion-title">Как пополнить кошелек Alipay и WeChat</label>
+      <div class="accordion-content">
+        <p>Вся работа проходит в Telegram. Указываете сумму обмена и реквизиты, после оплаты юани поступят на счет в
+          течение 5 минут.
+        </p>
+      </div>
 
+      <div class="accordion-item">
+        <input type="checkbox"
+               name="accordion"
+               id="item2"
+               class="accordion-input">
+        <label for="item2"
+               class="accordion-title">Ограничения на пополнения</label>
+        <div class="accordion-content">
+          <p>У нас есть некие ограничения на пополнения, такие как Минимальный размер на пополнение. Он составляет 200
+            Юань. Такие ограничения введены для того, чтобы...</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <input type="checkbox"
+               name="accordion"
+               id="item3"
+               class="accordion-input">
+        <label for="item3"
+               class="accordion-title">Вопрос 3</label>
+        <div class="accordion-content">
+          <p>Сам придумай вопрос бла бла бла туда сюда... Хз норм нет, заценишь</p>
+        </div>
+      </div>
     </div>
   </main>
 
@@ -43,7 +78,7 @@
           <h3>CNEX</h3>
           <p>Обменник RUB/CNY для Alipay, WeChat</p>
           <img class="qrcode"
-               src="img/qr-code (2).png">
+               src="/frontend/img/qr-code (2).png">
         </div>
 
         <div class="footer-section"

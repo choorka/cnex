@@ -2,3 +2,10 @@
 Гойды
 Как все работает
 style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/bg.jpg');">
+          <div class="card">
+            <img class="img-guides"
+                 src="img/1719093912119162280.jpg">
+            <a href="#">
+              <h2>Тестовый гайд 5 WeChat</h2>
+            </a>
+          </div>

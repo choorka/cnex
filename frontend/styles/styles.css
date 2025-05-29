@@ -149,3 +149,98 @@ a {
     background-color: var(--light-red);
 }
 
+.rates-container {
+  background: #121212;
+  border: 1px solid var(--red);
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.rates-container .header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.rates-container .header h3 {
+  color: #fff;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.rates-container .header .working-hours {
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+.rates-container .rates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.rates-container .rate-card {
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.rates-container .rate-card .range {
+  color: #ff4d4d;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.rates-container .rate-card .rate-value {
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.rates-container .notice {
+  background: rgba(255, 0, 0, 0.1);
+  padding: 0.8rem;
+  border-radius: 6px;
+  border-left: 3px solid var(--red);
+}
+
+.rates-container .notice p {
+  margin: 0.3rem 0;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.actions {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.tg-button {
+  background: var(--red);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 50px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tg-button:hover {
+  background: #cc0000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 136, 204, 0.3);
+}
+
+.tg-button .tg-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="white" d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.16.75-.68 1.17-1.32 1.17-.85 0-1.31-.38-2.08-.85z"/></svg>') no-repeat center;
+}

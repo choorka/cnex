@@ -6,7 +6,7 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet"
-        href="/frontend/styles/styles.css">
+        href="./styles/styles.css">
   <title>CNEX - как пополнить Alipay в России</title>
 </head>
 
@@ -21,8 +21,8 @@
       <nav class="nav-menu">
         <a href="https://t.me/+-tkxgvzLYT42Yzgy"
            target="_blank">Обмен</a>
-        <a href="/frontend/guides/guides.html">Гайды</a>
-        <a href="/frontend/faq.html">FAQ</a>
+        <a href="./guides/guides.html">Гайды</a>
+        <a href="./faq.html">FAQ</a>
       </nav>
     </div>
   </header>
@@ -32,7 +32,31 @@
     <div class="hero">
       <div class="hero-content">
         <h1>Обменяй RUB на CNY</h1>
-        <!-- <app-widget></app-widget> -->
+        <div class="rates-container">
+          <div class="header">
+            <h3>Курс CNY/RUB на <span id="lastUpdate">--</span></h3>
+            <div class="working-hours"
+                 id="workingHours">--</div>
+          </div>
+
+          <div class="rates-grid"
+               id="ratesGrid">
+            <!-- Карточки курсов будут добавлены здесь -->
+          </div>
+
+          <div class="notice">
+            <p>⚠️ Перед переводом уточняйте реквизиты</p>
+            <p>⏱ Среднее время обработки: 5-20 минут</p>
+          </div>
+
+          <div class="actions">
+            <button class="tg-button"
+                    id="telegramButton">
+              <i class="tg-icon"></i>
+              Перейти в Telegram
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -44,7 +68,7 @@
           <h3>CNEX</h3>
           <p>Обменник RUB/CNY для Alipay, WeChat</p>
           <img class="qrcode"
-               src="/frontend/img/qr-code (2).png">
+               src="./img/qr-code (2).png">
         </div>
 
         <div class="footer-section"
@@ -79,7 +103,8 @@
       </div>
     </div>
   </footer>
-  <script src="scripts/script.js"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/widget.js"></script>
 </body>
 
 </html>

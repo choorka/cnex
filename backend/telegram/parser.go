@@ -81,7 +81,7 @@ func parseDate(text string) string {
 }
 
 func GetLatestPostParsed() (*PostData, error) {
-    res, err := http.Get("https://t.me/s/test_for_my_backend")
+    res, err := http.Get("https://t.me/s/CNEXTrader")
     if err != nil {
         return nil, err
     }

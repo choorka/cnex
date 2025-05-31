@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
           range.textContent = `${rate.min}¥ - ${rate.max}¥`;
         }
 
-        const rateValue = document.createElement('div');
+        const rateValue = document.createElement('p');
         rateValue.className = 'rate-value';
         rateValue.textContent = `${rate.rate} ₽`;
 

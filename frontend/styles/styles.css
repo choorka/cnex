@@ -4,7 +4,7 @@
     font-family: "Poppins", sans-serif;
     --black: #000000;
     --dark-gray: #121212;
-    --red: #ff0000;
+    --red: #f4604f;
     --light-red: #ff4d4d;
     --white: #ffffff;
 }
@@ -15,7 +15,7 @@
 
 body {
     background: #000000;
-    background: linear-gradient(180deg,rgba(79, 79, 79, 1) 0%, rgba(59, 59, 59, 1) 50%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(180deg,rgb(84, 26, 26) 0%, rgb(38, 38, 38) 20%, rgb(15, 15, 15) 60%, rgb(52, 14, 14) 100%);
     color: var(--white);
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -114,7 +114,6 @@ a {
     background-size: cover;
     background-position: center;
     display: flex;
-    align-items: center;
     justify-content: center;
     text-align: center;
 }
@@ -129,11 +128,6 @@ a {
     margin-bottom: 1rem;
     color: var(--white);
 }
-
-/* .hero .hero-content .highlight {
-    color: var(--light-red);
-    font-weight: bold;
-} */
 
 .cta-button {
     background-color: var(--red);
@@ -180,6 +174,16 @@ a {
   grid-template-columns: repeat(3, minmax(140px, 1fr));
   gap: 1rem;
   margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 930px) {
+  .rates-container .rates-grid {
+    grid-template-columns: repeat(1, minmax(140px, 1fr));
+    font-size: 24px;
+  }
+  .rate-value {
+    
+  }
 }
 
 .rates-container .rate-card {

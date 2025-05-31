@@ -3,10 +3,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const lastUpdateElem = document.getElementById('lastUpdate');
   const workingHoursElem = document.getElementById('workingHours');
   const telegramButton = document.getElementById('telegramButton');
+  const loader = document.getElementById('loader');
+
+  loader.style.display = 'block';
+  ratesGrid.innerHTML = '';
+
 
   fetch('http://localhost:8080/latest')
     .then(response => response.json())
     .then(data => {
+      loader.style.display = 'none';
+
       lastUpdateElem.textContent = data.date || '--';
       workingHoursElem.textContent = data.hours + ' МСК' || '--';
 
@@ -33,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .catch(error => {
       console.error('Ошибка при получении данных:', error);
+      loader.style.display = 'none';
       // Фолбэк-данные
       const fallbackRates = [
         { min: 200, max: 999, rate: 12.00 },

@@ -73,6 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
   telegramButton.addEventListener('click', () => {
-    window.open('https://t.me/+-tkxgvzLYT42Yzgy', '_blank');
+    window.open('https://t.me/+U_3bmt2rT1gzMDIy', '_blank');
   });
 });

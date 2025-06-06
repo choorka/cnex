@@ -164,7 +164,6 @@ a {
   100% { transform: rotate(360deg); }
 }
 
-
 .rates-container {
   background: #121212;
   border: 1px solid var(--red);

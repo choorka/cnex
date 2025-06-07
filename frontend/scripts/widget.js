@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ratesGrid.innerHTML = '';
 
 
-  fetch('http://87.228.100.143:8080/latest')
+  fetch('http://87.228.100.143/latest')
     .then(response => response.json())
     .then(data => {
       loader.style.display = 'none';

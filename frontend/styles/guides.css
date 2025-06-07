@@ -1,39 +1,137 @@
-
-.img-guides {
-  width: 200px;
-  height: auto;
+body {
+  min-height: 100vh;
+  margin: 0;
 }
 
-.cont-card {
-  width: 1200px;
+.main {
+  min-height: 50rem;
+  background-size: cover;
+  background-position: center;
   display: flex;
-  gap: 3rem;
+  flex-direction: column;
+  align-items:center;
+  justify-content: flex-start;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.title-guides {
+  text-align: center;
+  color: white;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.container-guides {
+  display: flex;
+  max-width: 1300px;
   flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 3rem;
+  width: 100%;
 }
 
-.hero-content {
-  width: 1200px;
-}
-
-.hero {
+.card {
+  border-radius: 12px;
+  overflow: hidden; /* mb auto? */
+  width: 400px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  text-align: left;
+  color: white;
+  transition: all 0.3s ease;
 }
 
-@media (min-width: 768px) {
-  .questions {
-    max-width: clamp(720px, 90vw, 1200px);
-    padding: 0 clamp(24px, 6vw, 32px);
+.card a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+}
+
+.img-guides {
+  width: 100%;
+  height: 210px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+
+.img-guides:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 136, 204, 0.3);
+}
+
+.card h3 {
+  margin-top: 0;
+  /* padding: 0.5rem 1rem 1rem; */
+  font-size: 1.15rem;
+}
+
+@media (max-width: 1310px) {
+  .card {
+    flex-direction: row;
+    align-items:start;
+    width: 100%;
+    max-width: 100%;
+    gap: 10px;
+    padding: 1rem;
+  }
+
+  .img-guides {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .card h3 {
+    padding: 0;
+    font-size: 1.25rem;
+  }
+
+}
+
+@media (max-width: 930px) {
+  .card {
+    flex-direction: row;
+    align-items:start;
+    width: 100%;
+    max-width: 100%;
+    gap: 10px;
+    padding: 1rem;
+  }
+
+  .img-guides {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .card h3 {
+    padding: 0;
+    font-size: 1.25rem;
+  }
+
+}
+
+@media (max-width: 625px) {
+  .container-guides{
+    gap: 1rem;
+  }
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img-guides {
+    width: 100%;
+    max-width: 575px;
+  }
+
+  .card h3 {
+    text-align: left;
   }
 }
 
-@media (min-width: 1200px) {
-  .questions {
-    max-width: min(1400px, 95vw);
-    padding: 0 40px;
-  }
-}

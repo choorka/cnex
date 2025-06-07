@@ -3,10 +3,48 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="description"
+        content="Узнайте, как пополнить Alipay в России через CNEX. Актуальный курс CNY/RUB, быстрая обработка переводов, Telegram-поддержка.">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet"
-        href="styles/styles.css">
+        href="./styles/styles.css">
+  <link rel="icon"
+        type="image/png"
+        href="./img/юань.png">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CNEX",
+  "url": "https://example.com/",
+  "logo": "https://example.com/img/юань.png",
+  "description": "Обменник валют RUB на CNY для Alipay и WeChat в России. Быстрые переводы, актуальный курс, поддержка в Telegram.",
+  "sameAs": [
+    "https://t.me/cnex_trader",
+    "https://t.me/+U_3bmt2rT1gzMDIy",
+    "https://t.me/+lUn0vsBGjSBlOTEy"
+  ]
+}
+</script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "CNEX",
+  "url": "https://example.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://example.com/?s={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+
   <title>CNEX - как пополнить Alipay в России</title>
 </head>
 
@@ -18,23 +56,46 @@
            class="logo-link">CNEX</a>
       </div>
 
-      <nav class="header__menu">
-        <a href="https://t.me/+-tkxgvzLYT42Yzgy"
+      <nav class="nav-menu">
+        <a href="https://t.me/+U_3bmt2rT1gzMDIy"
            target="_blank">Обмен</a>
-        <a href="https://t.me/+lUn0vsBGjSBlOTEy"
-           target="_blank">Отзывы</a>
-        <a href="guides.html">Гайды</a>
-        <a href="faq.html">FAQ</a>
+        <a href="./pages/guides.html">Гайды</a>
+        <a href="./pages/faq.html">FAQ</a>
       </nav>
     </div>
   </header>
-
 
   <main>
     <div class="hero">
       <div class="hero-content">
         <h1>Обменяй RUB на CNY</h1>
-        <!-- <app-widget></app-widget> -->
+        <div class="rates-container">
+          <div class="header">
+            <h3>Курс CNY/RUB на <span id="lastUpdate">--</span></h3>
+            <div class="working-hours"
+                 id="workingHours">--</div>
+          </div>
+
+          <div id="loader"
+               class="loader"></div>
+          <div class="rates-grid"
+               id="ratesGrid">
+            <!-- Карточки курсов будут добавлены здесь -->
+          </div>
+
+          <div class="notice">
+            <p>⚠️ Перед переводом уточняйте реквизиты</p>
+            <p>⏱ Среднее время обработки: 5-20 минут</p>
+          </div>
+
+          <div class="actions">
+            <button class="tg-button"
+                    id="telegramButton">
+              <i class="tg-icon"></i>
+              Перейти в Telegram
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -46,27 +107,31 @@
           <h3>CNEX</h3>
           <p>Обменник RUB/CNY для Alipay, WeChat</p>
           <img class="qrcode"
-               src="img/qr-code (2).png">
+               alt="QR-код для пополнения Alipay через обменник CNEX"
+               src="./img/qr-code.png">
         </div>
 
         <div class="footer-section"
              id="faq">
-          <h3>FAQ</h3>
-          <div class="faq-item">
-            <h4>Как пополнить Alipay?</h4>
-            <p>
-              Вся работа проходит в Telegram. Указываете сумму обмена и реквизиты, после оплаты юани
-              поступят на счет в течение 5 минут.
-            </p>
-            <h4>Какие лимиты?</h4>
-            <p>Лимиты на пополнение Alipay и WeChat минимальны - 200 Юань.</p>
-          </div>
+          <h3>Компания</h3>
+          <p>
+            <a href="https://t.me/+U_3bmt2rT1gzMDIy"
+               target="_blank">Обменять валюту</a>
+          </p>
+          <p>
+            <a href="./pages/guides.html"
+               target="_blank">Полезные гайды</a>
+          </p>
+          <p>
+            <a href="./pages/faq.html"
+               target="_blank">Вопросы</a>
+          </p>
         </div>
 
         <div class="footer-section">
           <h3>Контакты</h3>
           <p>
-            <a href="https://t.me/+-tkxgvzLYT42Yzgy"
+            <a href="https://t.me/+U_3bmt2rT1gzMDIy"
                target="_blank">Telegram-канал</a>
           </p>
           <p>
@@ -81,7 +146,8 @@
       </div>
     </div>
   </footer>
-  <script src="scripts/script.js"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/widget.js"></script>
 </body>
 
 </html>

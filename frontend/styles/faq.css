@@ -10,26 +10,8 @@
   margin-top: 24px;
 }
 
-.questions {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  max-width: clamp(320px, 85vw, 1440px);
+.container-faq h1 {
+  font-weight: 600;
+  font-size: 40px;
 }
 
-@media (min-width: 768px) {
-  .questions {
-    max-width: clamp(720px, 90vw, 1200px);
-    padding: 0 clamp(24px, 6vw, 32px);
-  }
-}
-
-@media (min-width: 1200px) {
-  .questions {
-    max-width: min(1400px, 95vw);
-    padding: 0 40px;
-  }
-}

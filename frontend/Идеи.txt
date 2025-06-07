@@ -2,3 +2,59 @@
 Гойды
 Как все работает
 style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/assets/bg.jpg');">
+          <div class="card">
+            <img class="img-guides"
+                 src="img/1719093912119162280.jpg">
+            <a href="#">
+              <h2>Тестовый гайд 5 WeChat</h2>
+            </a>
+          </div>
+
+
+    <div class="questions">
+      <h1>Частые вопросы</h1>
+      <h2>Как пополнить кошелек Alipay и WeChat?</h2>
+      <span>Как пополнить кошелек Alipay</span>
+      <span>Как пополнить кошелек WeChat</span>
+      <h2>Ограничения пополнения</h2>
+      <span>Ответ на вопрос номер 2 и бла бла бла</span>
+      <span>Более подробную информацию можно посмотреть<a href=""><b>тут</b></a></span>
+      <h2>Вопрос 3</h2>
+      <span>Ответ на вопрос номер 3 и бла бла бла</span>
+      <span>Более подробную информацию можно посмотреть<a href=""><b>тут</b></a></span>
+    </div>
+
+        /* Иконка плюс/минус */
+        .accordion-icon {
+            position: relative;
+            width: 16px;
+            height: 16px;
+        }
+        
+        .accordion-icon::before,
+        .accordion-icon::after {
+            content: '';
+            position: absolute;
+            background-color: #333;
+            transition: transform 0.3s ease;
+        }
+        
+        .accordion-icon::before {
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform: translateY(-50%);
+        }
+        
+        .accordion-icon::after {
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            transform: translateX(-50%);
+        }
+        
+        .accordion-input:checked ~ .accordion-title .accordion-icon::after {
+            transform: translateX(-50%) rotate(90deg);
+            opacity: 0;

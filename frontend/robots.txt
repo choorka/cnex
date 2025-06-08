@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://cnextrade.ru/sitemap.xml
